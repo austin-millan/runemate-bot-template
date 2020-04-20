@@ -1,0 +1,26 @@
+<manifest>
+    <main-class>com.runemateuser.bots.tutorial_bot.TutorialBot</main-class>
+    <name>TutorialBot</name>
+    <tag-line>Nothing special</tag-line><!--Max of 50 chars-->
+    <description>Following along with a simple tutorial.</description><!--Max of 110 chars-->
+    <version>0.0.1</version>
+    <compatibility>
+        <game>OSRS</game>
+    </compatibility>
+    <categories>
+        <category>Tutorial</category>
+    </categories>
+    <!--Required to publish on the bot store-->
+    <internal-id>notsure</internal-id>
+    <!--The rest are optional-->
+    <open-source>false</open-source>
+    <hidden>true</hidden> <!--If you need to hide it from the bot store for maintenance-->
+    <access>private</access>
+    <tags>
+        <tag>Tree</tag>
+        <tag>Vine</tag>
+    </tags>
+<!--    <resources>-->
+<!--        <resource>path/to/file.png</resource>-->
+<!--    </resources>-->
+</manifest>
