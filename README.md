@@ -37,9 +37,9 @@ sudo chmod 777 -R /usr/lib/jvm/java-1.8.0-openjdk-amd64
 
 I've provided a simple Run configuration in this template.
 It's configured to launch the `RuneMate.jar` file with specific command-line arguments and RuneMate-specific classpath.
-Make sure you edit the default launch configuration by:
-- Navigate to Run -> Edit Configuration -> Boot.
-  - Edit the "Program Arguments" field to use your personal RuneMate basic authentication credentials.
+- Navigate to Run -> Edit Configuration -> Templates -> Application
+  - "Main Class": com.runemate.Boot
+  - "Program Arguments": -sdk -login="runemateuser":"runematepassword"
 
 Finally, to follow both author convention,
 you'll want to go through the project and rename/correct usages of "runemateuser" to your own RuneMate account username.
