@@ -7,7 +7,7 @@ The purpose for this repository is to simplify/bootstrap [RuneMate](https://www.
 This development workspace is for IntelliJ IDEA workspaces specifically.
 
 Note that RuneMate workspaces aren't configured to run your code directly.
-They're configured to launch the dependency `RuneMate.jar` in development mode
+They're configured to launch the dependency [`RuneMate.jar`](lib/RuneMate.jar) in development mode
 which will then look for the bots in a specific directory on your computer. 
 
 This project is based on a guide found on the RuneMate forum, [here](https://www.runemate.com/community/threads/the-coding-chronicles-chapter-two-hello-world.6738/).
@@ -35,20 +35,20 @@ sudo chmod 777 -R /usr/lib/jvm/java-1.8.0-openjdk-amd64
 - Navigate to File -> Project Structure -> Libraries
   - Add `lib/RuneMate.jar`
 
-In this template, I've provided a simple Run configuration.
+I've provided a simple Run configuration in this template.
 It's configured to launch the `RuneMate.jar` file with specific command-line arguments and RuneMate-specific classpath.
 Make sure you edit the default launch configuration by:
 - Navigate to Run -> Edit Configuration -> Boot.
   - Edit the "Program Arguments" field to use your personal RuneMate basic authentication credentials.
 
-Finally to follow both author convention,
+Finally, to follow both author convention,
 you'll want to go through the project and rename/correct usages of "runemateuser" to your own RuneMate account username.
 The only locations should be:
-- src.com.runemateuser
+- [`src.com.runemateuser`](src/com/runemateuser/)
   - Rename this file to your username
-- src.com.runemateuser.bots.tutorial_bot.TutorialBot
+- [`src.com.runemateuser.bots.tutorial_bot.TutorialBot`](src/com/runemateuser/bots/tutorial_bot/TutorialBot.java)
   - Fix the import to use your username
-- src.com.runemateuser.bots.tutorial_bot.TutorialBot.manifest.xml
+- [`src.com.runemateuser.bots.tutorial_bot.TutorialBot.manifest.xml`](src/com/runemateuser/bots/tutorial_bot/TutorialBot.manifest.xml)
   - Correct `<main-class>` tag to use the new path.
 
 #### Configure RuneMate
@@ -60,7 +60,7 @@ Once you have RuneMate launched, you'll need to ensure it can actually find the 
 
 #### Writing Bots
 
-All bots should go under: `src/com/runemateuser/bots/` to be picked up by RuneMate.
+All bots should go under: [`src/com/runemateuser/bots/`](src/com/runemateuser/bots/) to be picked up by RuneMate.
 
 #### Setup OldSchool RuneScape:
 
